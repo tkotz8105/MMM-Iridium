@@ -12,7 +12,12 @@ Module.register("MMM-Iridium",{
 	// Default module config.
 	defaults: {
 		maximumEntries: 7,
-		updateInterval: 6 * 60 * 60 * 1000		// Every 6 hours
+		updateInterval: 6 * 60 * 60 * 1000,		// Every 6 hours
+		latitude: 35.6744,						// Positive for Northern Hemisphere, Negative for Southern Hemispher
+		longitude: -82.5913,					// Positive for eastern longitudes, negative for western longitudes
+		location: "Home",						// Holding location in reserve for future use
+		altitude: 642,							// Holding altitude in reserve for future use
+		timezone: "EST"							// Set timezone: EST, CST, MST, PST
 	},
  // Override socket notification handler.
  socketNotificationReceived: function(notification, payload) {
