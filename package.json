@@ -1,0 +1,26 @@
+{
+  "name": "Magic-Mirror-Module-Iridium",
+  "version": "1.0.0",
+  "description": "Iridium Satellite module for the Magic Mirror.",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "keywords": [
+    "magic mirror",
+    "smart mirror",
+    "iridium",
+    "module"
+  ],
+  "author": "Tom Kotz",
+  "contributors": "",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "request": "latest",
+    "cheerio": "latest"
+    }
+}
