@@ -8,7 +8,7 @@ This an extension for the [MagicMirror](https://github.com/MichMich/MagicMirror)
 Flare 'forecasts' are pulled every six hours from 'http://www.heavens-above.com/'.  Please note the site has a limitation on the number of 'hits' you make to the web site... but four a day should suffice.
 
 ## Installation
-1. Navigate into your MagicMirror's `modules` folder and execute `git clone https://github.com/tkotz/MMM-Iridium.git`. A new folder will appear navigate into it.
+1. Navigate into your MagicMirror's `modules` folder and execute `git clone https://github.com/tkotz8105/MMM-Iridium.git`. A new folder will appear navigate into it.
 2. Execute `npm install` to install the node dependencies.
 3. The routine requires 'cheerio.js' so run 'npm install cheerio'.
 
