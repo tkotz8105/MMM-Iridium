@@ -81,9 +81,15 @@ module.exports = NodeHelper.create({
 						}
 					}
 				 });
-			console.log("....", allIridiums.length-1 + " Iridium sitings retrieved.");
+			if (allIridiums.length === 1) {
+				allIridiums.push(hdspc5.concat(hdspc3, "NO IRIDIUM FLARE SITINGS"));
+				allIridiums.push(hdspc5.concat(hdspc1, "WITH -1 MAGNITUDE OR BETTER"));
+				allIridiums.push(hdspc5.concat(hdspc5, "IN NEXT SEVEN DAYS"));
+				console.log("....No Iridium sitings retrieved.");
+			} else {
+				console.log("....", allIridiums.length-1 + " Iridium sitings retrieved.");
+			}
 //			console.log(allIridiums);
-
 			self.sendSocketNotification('IRIDIUMS', allIridiums);
 		}
 	  });
